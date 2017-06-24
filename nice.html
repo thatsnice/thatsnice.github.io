@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>
+      Thats Nice!
+    </title>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+    <script src="//coffeescript.org/extras/coffee-script.js" type="text/javascript"></script>
+    <script type="text/coffeescript">
+      (nice = $ "<em>").append "Nice!"
+      (that = $ "<div>")
+        .append "That's ", nice
+
+      $(document.body)
+        .append that
+
+      scale = (el, factor) ->
+        curSize = el.style.fontSize
+        curSize = curSize.substr 0, curSize.length - 1
+        el.style.fontSize = (curSize * factor) + "%"
+
+      #  el.
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
